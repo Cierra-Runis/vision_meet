@@ -1,6 +1,6 @@
 import 'package:vision_meet/index.dart';
 
-void main() => runApp(const VisionMeetApp());
+void main() => VisionMeet.run();
 
 class VisionMeetApp extends StatelessWidget {
   const VisionMeetApp({super.key});
@@ -22,6 +22,7 @@ class VisionMeetApp extends StatelessWidget {
         useMaterial3: true,
         appBarTheme: const AppBarTheme(centerTitle: true),
       ),
+      scrollBehavior: const CupertinoScrollBehavior(),
       home: const LoginPage(),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
