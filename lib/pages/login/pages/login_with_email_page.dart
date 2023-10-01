@@ -8,7 +8,11 @@ class LoginWithEmailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('使用 Email 登录')),
+      appBar: AppBar(
+        title: const Text('使用 Email 登录'),
+      ),
+      // TODO:
+      body: const Placeholder(),
     );
   }
 }

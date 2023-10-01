@@ -30,6 +30,9 @@ class LoginWithButton extends StatelessWidget {
                 title: const Text('服务协议和隐私条款'),
                 content: RichText(
                   text: TextSpan(
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onBackground,
+                    ),
                     text: '为保障你的合法权益，请阅读并同意',
                     children: [
                       ServiceLicenseTextSpan(context: context),
@@ -39,12 +42,7 @@ class LoginWithButton extends StatelessWidget {
                   ),
                 ),
                 actions: [
-                  TextButton(
-                    onPressed: () => Navigator.pop(context),
-                    child: Text(
-                      MaterialLocalizations.of(context).cancelButtonLabel,
-                    ),
-                  ),
+                  const CancelTextButton(),
                   TextButton(
                     onPressed: () => Navigator.pop(context, true),
                     child: const Text('同意'),
@@ -55,13 +53,16 @@ class LoginWithButton extends StatelessWidget {
 
             if (agreed == true && context.mounted) {
               onChanged?.call(agreed);
-              afterAgreed?.call(context);
+              Future.delayed(
+                const Duration(milliseconds: 200),
+                () => afterAgreed?.call(context),
+              );
             }
           },
           icon: Icon(icon),
           padding: const EdgeInsets.all(14),
         ),
-        Text(text)
+        Text(text),
       ],
     );
   }

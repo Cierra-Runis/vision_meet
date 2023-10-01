@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
           LoginLicenseAgreeWidget(
             agreedLicense: _agreedLicense,
             onChanged: onChanged,
-          )
+          ),
         ],
       ),
     );

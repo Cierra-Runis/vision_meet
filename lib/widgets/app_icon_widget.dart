@@ -27,7 +27,7 @@ class AppIconWidget extends StatelessWidget {
             fontSize: 32,
             fontWeight: FontWeight.bold,
           ),
-        )
+        ),
       ],
     );
   }

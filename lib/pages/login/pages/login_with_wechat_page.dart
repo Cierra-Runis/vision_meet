@@ -11,6 +11,8 @@ class LoginWithWeChatPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('使用微信登录'),
       ),
+      // TODO:
+      body: const Placeholder(),
     );
   }
 }

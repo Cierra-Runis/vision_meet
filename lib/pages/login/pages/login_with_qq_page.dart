@@ -11,6 +11,8 @@ class LoginWithQQPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('使用 QQ 登录'),
       ),
+      // TODO:
+      body: const Placeholder(),
     );
   }
 }
