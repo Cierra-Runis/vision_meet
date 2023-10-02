@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
           const Expanded(
             flex: 2,
             child: Center(
-              child: AppIconWidget(),
+              child: AppIcon(),
             ),
           ),
           Expanded(

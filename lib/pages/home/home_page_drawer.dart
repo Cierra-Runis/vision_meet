@@ -12,7 +12,7 @@ class HomePageDrawer extends StatelessWidget {
         child: BasedListView(
           children: [
             BasedListTile(
-              leading: const HomePageLeadingAvatar(),
+              leading: const BasedAvatar(),
               titleText: 'User.name',
               detail: const Badge(label: Text('免费版')),
               onTap: () => context.push(const ProfilePage()),

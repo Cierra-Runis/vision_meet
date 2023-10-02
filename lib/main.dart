@@ -10,9 +10,11 @@ class VisionMeetApp extends StatelessWidget {
     return MaterialApp(
       title: VisionMeet.appName,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+        ),
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(centerTitle: true),
+        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 1),
       ),
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -20,7 +22,7 @@ class VisionMeetApp extends StatelessWidget {
           seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(centerTitle: true),
+        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 1),
       ),
       scrollBehavior: const CupertinoScrollBehavior(),
       home: const LoginPage(),

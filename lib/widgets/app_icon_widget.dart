@@ -1,7 +1,7 @@
 import 'package:vision_meet/index.dart';
 
-class AppIconWidget extends StatelessWidget {
-  const AppIconWidget({
+class AppIcon extends StatelessWidget {
+  const AppIcon({
     super.key,
   });
 

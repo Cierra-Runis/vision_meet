@@ -12,7 +12,7 @@ class AboutUsPage extends StatelessWidget {
       body: Column(
         children: [
           const Expanded(
-            child: Center(child: AppIconWidget()),
+            child: Center(child: AppIcon()),
           ),
           Expanded(
             flex: 3,
@@ -39,7 +39,7 @@ class AboutUsPage extends StatelessWidget {
           TextButton(
             onPressed: () => context.push(const LicensePage()),
             child: Text(MaterialLocalizations.of(context).licensesPageTitle),
-          )
+          ),
         ],
       ),
     );

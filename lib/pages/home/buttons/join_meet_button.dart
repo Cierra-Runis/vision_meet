@@ -8,12 +8,10 @@ class JoinMeetButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () {},
+      onPressed: () => context.push(const JoinMeetPage()),
       icon: const Column(
         children: [
-          Icon(
-            Icons.add_rounded,
-          ),
+          Icon(Icons.add_rounded),
           Text('加入会议'),
         ],
       ),

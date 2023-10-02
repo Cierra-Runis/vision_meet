@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Center(
-          child: HomePageLeadingAvatar(),
+          child: BasedAvatar(),
         ),
         title: const Text('User.name'),
         centerTitle: false,

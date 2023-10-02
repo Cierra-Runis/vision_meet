@@ -1,7 +1,7 @@
 import 'package:vision_meet/index.dart';
 
-class HomePageLeadingAvatar extends StatelessWidget {
-  const HomePageLeadingAvatar({
+class BasedAvatar extends StatelessWidget {
+  const BasedAvatar({
     super.key,
   });
 

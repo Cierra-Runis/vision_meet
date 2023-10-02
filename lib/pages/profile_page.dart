@@ -16,7 +16,7 @@ class ProfilePage extends StatelessWidget {
               BasedListTile(
                 leadingIcon: Icons.account_box_rounded,
                 titleText: '头像',
-                detail: const HomePageLeadingAvatar(),
+                detail: const BasedAvatar(),
                 onTap: () {},
               ),
               BasedListTile(
