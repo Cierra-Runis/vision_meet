@@ -1,6 +1,5 @@
-export 'audio_enable_tile.dart';
-export 'speaker_enable_tile.dart';
-export 'video_enable_tile.dart';
+export 'tiles/index.dart';
+
 export 'audio_setting_section.dart';
 export 'general_setting_section.dart';
 export 'video_setting_section.dart';

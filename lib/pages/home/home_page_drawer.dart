@@ -66,11 +66,7 @@ class HomePageDrawer extends StatelessWidget {
             BasedListSection(
               elevation: 0,
               children: [
-                BasedListTile(
-                  leadingIcon: Icons.security_rounded,
-                  titleText: '账号与安全',
-                  onTap: () {},
-                ),
+                const AccountSecureTile(),
                 BasedListTile(
                   leadingIcon: Icons.settings_rounded,
                   titleText: '设置',
