@@ -8,7 +8,7 @@ class BackTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () => Navigator.pop(context),
+      onPressed: () => context.pop(),
       child: Text(
         MaterialLocalizations.of(context).backButtonTooltip,
       ),

@@ -44,7 +44,7 @@ class LoginWithButton extends StatelessWidget {
                 actions: [
                   const CancelTextButton(),
                   TextButton(
-                    onPressed: () => Navigator.pop(context, true),
+                    onPressed: () => context.pop(true),
                     child: const Text('同意'),
                   ),
                 ],

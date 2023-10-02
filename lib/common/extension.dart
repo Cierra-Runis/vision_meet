@@ -7,4 +7,6 @@ extension PlatformExtension on Platform {
 extension BuildContextExtension on BuildContext {
   Future<T?> push<T extends Object?>(Widget page) =>
       Navigator.push(this, CupertinoPageRoute<T>(builder: (context) => page));
+
+  void pop<T extends Object?>([T? result]) => Navigator.pop(this, result);
 }

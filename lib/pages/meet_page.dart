@@ -25,15 +25,16 @@ class MeetPage extends StatelessWidget {
                       BasedListTile(
                         titleText: '你好',
                         onTap: () {
-                          Navigator.pop(context);
-                          Navigator.pop(context);
+                          context.pop();
+                          context.pop();
                         },
                       ),
                       BasedListTile(
                         titleText: '你好',
                         onTap: () {
-                          Navigator.pop(context);
-                          Navigator.pop(context);
+                          context.pop();
+
+                          context.pop();
                         },
                       ),
                     ],
