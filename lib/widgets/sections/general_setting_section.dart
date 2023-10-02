@@ -10,10 +10,7 @@ class GeneralSettingSection extends StatelessWidget {
     return BasedListSection(
       titleText: '通用',
       children: [
-        const BasedListTile(
-          leadingIcon: Icons.color_lens_rounded,
-          titleText: '深色模式',
-        ),
+        const DarkThemeTile(),
         BasedSwitchListTile(
           value: true,
           onChanged: (value) {},

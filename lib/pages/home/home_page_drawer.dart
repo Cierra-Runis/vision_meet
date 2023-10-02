@@ -11,12 +11,7 @@ class HomePageDrawer extends StatelessWidget {
       child: SafeArea(
         child: BasedListView(
           children: [
-            BasedListTile(
-              leading: const BasedAvatar(),
-              titleText: 'User.name',
-              detail: const Badge(label: Text('免费版')),
-              onTap: () => context.push(const ProfilePage()),
-            ),
+            const ProfileTile(),
             BasedListSection(
               elevation: 0,
               children: [
@@ -63,37 +58,19 @@ class HomePageDrawer extends StatelessWidget {
                 ),
               ],
             ),
-            BasedListSection(
+            const BasedListSection(
               elevation: 0,
               children: [
-                const AccountSecureTile(),
-                BasedListTile(
-                  leadingIcon: Icons.settings_rounded,
-                  titleText: '设置',
-                  onTap: () => context.push(const SettingPage()),
-                ),
-                BasedListTile(
-                  leadingIcon: Icons.help_center_rounded,
-                  titleText: '帮助与客服',
-                  onTap: () {},
-                ),
-                const AboutUsTile(),
+                AccountSecureTile(),
+                SettingTile(),
+                HelpServiceTile(),
+                AboutUsTile(),
               ],
             ),
-            BasedListSection(
+            const BasedListSection(
               elevation: 0,
               children: [
-                BasedListTile(
-                  leadingIcon: Icons.logout_rounded,
-                  titleText: '退出登录',
-                  onTap: () => Navigator.pushAndRemoveUntil(
-                    context,
-                    CupertinoPageRoute(
-                      builder: (context) => const LoginPage(),
-                    ),
-                    (_) => false,
-                  ),
-                ),
+                LogoutTile(),
               ],
             ),
           ],

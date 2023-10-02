@@ -7,25 +7,13 @@ class LoginSettingSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BasedListSection(
+    return const BasedListSection(
       children: [
-        BasedListTile(
-          leadingIcon: Icons.wifi_rounded,
-          titleText: '网络检测',
-          onTap: () {},
-        ),
-        BasedListTile(
-          leadingIcon: FontAwesomeIcons.p,
-          titleText: '代理设置',
-          onTap: () {},
-        ),
-        BasedListTile(
-          leadingIcon: Icons.cleaning_services_rounded,
-          titleText: '应用缓存清理',
-          onTap: () {},
-        ),
-        const NewReleaseTile(),
-        const AboutUsTile(),
+        NetworkDetectTile(),
+        ProxySettingTile(),
+        CacheCleanTile(),
+        NewReleaseTile(),
+        AboutUsTile(),
       ],
     );
   }

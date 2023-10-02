@@ -14,23 +14,15 @@ class AboutUsPage extends StatelessWidget {
           const Expanded(
             child: Center(child: AppIcon()),
           ),
-          Expanded(
+          const Expanded(
             flex: 3,
             child: BasedListView(
               children: [
                 BasedListSection(
                   children: [
-                    const NewReleaseTile(),
-                    BasedListTile(
-                      leadingIcon: Icons.fiber_new_rounded,
-                      titleText: '版本介绍',
-                      onTap: () {},
-                    ),
-                    BasedListTile(
-                      leadingIcon: Icons.auto_awesome_rounded,
-                      titleText: '打分评价',
-                      onTap: () {},
-                    ),
+                    NewReleaseTile(),
+                    VersionIntroTile(),
+                    ScoringTile(),
                   ],
                 ),
               ],

@@ -14,7 +14,7 @@ class VideoSettingSection extends StatelessWidget {
           value: true,
           onChanged: (value) {},
         ),
-        const VideoVirtualBackgroundTile(),
+        const VirtualBackgroundTile(),
         BasedSwitchListTile(
           value: true,
           onChanged: (value) {},
@@ -29,21 +29,6 @@ class VideoSettingSection extends StatelessWidget {
           subtitleText: '实时减少视频画面噪点，使画面更清晰',
         ),
       ],
-    );
-  }
-}
-
-class VideoVirtualBackgroundTile extends StatelessWidget {
-  const VideoVirtualBackgroundTile({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return BasedListTile(
-      leadingIcon: Icons.wallpaper_rounded,
-      titleText: '虚拟背景',
-      onTap: () {},
     );
   }
 }

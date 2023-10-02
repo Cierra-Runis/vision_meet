@@ -1,5 +1,7 @@
 import 'package:vision_meet/index.dart';
 
+import '../widgets/tiles/common/virtual_background_tile.dart';
+
 class JoinMeetPage extends StatefulWidget {
   const JoinMeetPage({
     super.key,
@@ -56,7 +58,7 @@ class _JoinMeetPageState extends State<JoinMeetPage> {
                       onChanged: (value) =>
                           setState(() => _enableVideo = value),
                     ),
-                    if (_enableVideo) const VideoVirtualBackgroundTile(),
+                    if (_enableVideo) const VirtualBackgroundTile(),
                   ],
                 ),
               ],
