@@ -9,22 +9,23 @@ environment:
   sdk: ">=3.1.2 <4.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-  flutter_localizations:
-    sdk: flutter
   based_list: ^1.1.1
   cupertino_icons: ^1.0.6
+  flutter:
+    sdk: flutter
   flutter_displaymode: ^0.6.0
+  flutter_localizations:
+    sdk: flutter
   flutter_svg: ^2.0.7
   font_awesome_flutter: ^10.5.0
-  qr_code_scanner: ^1.0.1 # TIPS: Only for Android and iOS
+  image_picker: ^1.0.4
+  mobile_scanner: ^3.4.1 # TIPS: Only for Android and iOS
   sticky_and_expandable_list: ^1.1.3
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true

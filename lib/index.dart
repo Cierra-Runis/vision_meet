@@ -14,5 +14,6 @@ export 'package:flutter_displaymode/flutter_displaymode.dart';
 export 'package:flutter_localizations/flutter_localizations.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
-export 'package:qr_code_scanner/qr_code_scanner.dart';
+export 'package:image_picker/image_picker.dart';
+export 'package:mobile_scanner/mobile_scanner.dart';
 export 'package:sticky_and_expandable_list/sticky_and_expandable_list.dart';
