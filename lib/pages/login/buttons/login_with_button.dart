@@ -11,7 +11,7 @@ class LoginWithButton extends StatelessWidget {
   });
 
   final void Function(BuildContext context)? afterAgreed;
-  final IconData? icon;
+  final IconData icon;
   final bool agreedLicense;
   final ValueChanged<bool?>? onChanged;
   final String text;

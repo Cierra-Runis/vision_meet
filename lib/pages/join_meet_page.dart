@@ -1,7 +1,5 @@
 import 'package:vision_meet/index.dart';
 
-import '../widgets/tiles/common/virtual_background_tile.dart';
-
 class JoinMeetPage extends StatefulWidget {
   const JoinMeetPage({
     super.key,
