@@ -10,9 +10,6 @@ class LoginWithPhoneButton extends LoginWithButton {
   });
 
   @override
-  void Function(BuildContext context)? get afterAgreed => (context) =>
-      Navigator.push(
-        context,
-        CupertinoPageRoute(builder: (context) => const LoginWithPhonePage()),
-      );
+  void Function(BuildContext context)? get afterAgreed =>
+      (context) => context.push(const LoginWithPhonePage());
 }

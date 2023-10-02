@@ -17,25 +17,20 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () => Navigator.push(
-            context,
-            CupertinoPageRoute(
-              builder: (context) => const LoginSettingPage(),
-            ),
-          ),
+          onPressed: () => context.push(const LoginSettingPage()),
           icon: const Icon(Icons.settings_rounded),
         ),
       ),
       body: Column(
         children: [
           const Expanded(
-            flex: 3,
+            flex: 2,
             child: Center(
               child: AppIconWidget(),
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Center(
               child: Wrap(
                 spacing: 42,

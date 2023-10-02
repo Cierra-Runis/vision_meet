@@ -1,4 +1,5 @@
 import 'package:vision_meet/index.dart';
+import 'dart:developer' as devtools show log;
 
 class VisionMeet {
   const VisionMeet._();
@@ -13,4 +14,7 @@ class VisionMeet {
 
     runApp(const VisionMeetApp());
   }
+
+  static void printLog(dynamic log) =>
+      devtools.log(log, time: DateTime.now(), name: 'VisionMeet');
 }

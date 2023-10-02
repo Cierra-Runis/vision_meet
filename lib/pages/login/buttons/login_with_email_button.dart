@@ -9,9 +9,6 @@ class LoginWithEmailButton extends LoginWithButton {
     required super.onChanged,
   });
   @override
-  void Function(BuildContext context)? get afterAgreed => (context) =>
-      Navigator.push(
-        context,
-        CupertinoPageRoute(builder: (context) => const LoginWithEmailPage()),
-      );
+  void Function(BuildContext context)? get afterAgreed =>
+      (context) => context.push(const LoginWithEmailPage());
 }

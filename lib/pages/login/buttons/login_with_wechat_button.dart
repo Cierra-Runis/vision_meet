@@ -10,9 +10,6 @@ class LoginWithWeChatButton extends LoginWithButton {
   });
 
   @override
-  void Function(BuildContext context)? get afterAgreed => (context) =>
-      Navigator.push(
-        context,
-        CupertinoPageRoute(builder: (context) => const LoginWithWeChatPage()),
-      );
+  void Function(BuildContext context)? get afterAgreed =>
+      (context) => context.push(const LoginWithWeChatPage());
 }

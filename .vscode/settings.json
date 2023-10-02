@@ -6,5 +6,6 @@
     "videocam",
     "wechat",
     "weixin"
-  ]
+  ],
+  "java.configuration.updateBuildConfiguration": "automatic"
 }

@@ -11,8 +11,5 @@ class LoginWithQQButton extends LoginWithButton {
 
   @override
   void Function(BuildContext context)? get afterAgreed =>
-      (context) => Navigator.push(
-            context,
-            CupertinoPageRoute(builder: (context) => const LoginWithQQPage()),
-          );
+      (context) => context.push(const LoginWithQQPage());
 }
