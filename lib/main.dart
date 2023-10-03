@@ -32,7 +32,6 @@ class VisionMeetApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
-        Locale('en'),
         Locale('zh', 'CN'),
       ],
     );
