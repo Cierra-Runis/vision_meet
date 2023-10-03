@@ -19,8 +19,18 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        leading: const Center(
-          child: BasedAvatar(),
+        leading: Builder(
+          builder: (context) {
+            return BasedAvatar(
+              image: const NetworkImage(
+                'https://docs.flutter.dev/assets/images/dash/dash-fainting.gif',
+              ),
+              onTap: Scaffold.of(context).openDrawer,
+              badge: const Badge(
+                backgroundColor: Colors.green,
+              ),
+            );
+          },
         ),
         title: const Text('User.name'),
         centerTitle: false,
@@ -73,7 +83,7 @@ class HomePage extends StatelessWidget {
                         Icon(
                           Icons.coffee_rounded,
                           size: 96,
-                          color: Theme.of(context).colorScheme.outline,
+                          color: context.colorScheme.outline,
                         ),
                         const Text('暂无会议'),
                       ],

@@ -14,7 +14,7 @@ class VisionMeetApp extends StatelessWidget {
           seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 1),
+        appBarTheme: const AppBarTheme(centerTitle: true),
       ),
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -22,7 +22,7 @@ class VisionMeetApp extends StatelessWidget {
           seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(centerTitle: true, elevation: 1),
+        appBarTheme: const AppBarTheme(centerTitle: true),
       ),
       scrollBehavior: const CupertinoScrollBehavior(),
       home: const LoginPage(),

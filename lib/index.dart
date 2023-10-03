@@ -9,6 +9,7 @@ export 'package:flutter/cupertino.dart' hide RefreshCallback;
 export 'package:flutter/gestures.dart';
 export 'package:flutter/material.dart';
 
+export 'package:based_avatar/based_avatar.dart';
 export 'package:based_list/based_list.dart';
 export 'package:flutter_displaymode/flutter_displaymode.dart';
 export 'package:flutter_localizations/flutter_localizations.dart';

@@ -49,8 +49,14 @@ class _JoinMeetPageState extends State<JoinMeetPage> {
                 ),
                 BasedListSection(
                   children: [
-                    const MicEnableTile(),
-                    const SpeakerEnableTile(),
+                    MicEnableTile(
+                      value: true,
+                      onChanged: (value) {},
+                    ),
+                    SpeakerEnableTile(
+                      value: true,
+                      onChanged: (value) {},
+                    ),
                     VideoEnableTile(
                       value: _enableVideo,
                       onChanged: (value) =>

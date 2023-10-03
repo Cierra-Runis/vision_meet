@@ -9,6 +9,7 @@ environment:
   sdk: ">=3.1.2 <4.0.0"
 
 dependencies:
+  based_avatar: ^1.0.0
   based_list: ^1.1.1
   cupertino_icons: ^1.0.6
   flutter:

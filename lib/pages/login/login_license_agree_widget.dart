@@ -19,7 +19,7 @@ class LoginLicenseAgreeWidget extends StatelessWidget {
       title: RichText(
         text: TextSpan(
           text: '我已阅读并同意',
-          style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
+          style: TextStyle(color: context.colorScheme.onBackground),
           children: [
             ServiceLicenseTextSpan(context: context),
             const TextSpan(text: '和'),

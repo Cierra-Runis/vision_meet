@@ -4,7 +4,7 @@ class LoginWithQQButton extends LoginWithButton {
   const LoginWithQQButton({
     super.key,
     super.text = 'QQ',
-    super.icon = FontAwesomeIcons.qq,
+    super.icon = Assets.qqIcon,
     required super.agreedLicense,
     required super.onChanged,
   });

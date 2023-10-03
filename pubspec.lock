@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  based_avatar:
+    dependency: "direct main"
+    description:
+      name: based_avatar
+      sha256: "09b61570deb921730ae7cc6fb14b47d0a67296a4602c403acccf8c1d6023c6b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   based_list:
     dependency: "direct main"
     description:

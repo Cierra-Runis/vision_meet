@@ -4,7 +4,7 @@ class LoginWithWeChatButton extends LoginWithButton {
   const LoginWithWeChatButton({
     super.key,
     super.text = '微信',
-    super.icon = FontAwesomeIcons.weixin,
+    super.icon = Assets.wechatIcon,
     required super.agreedLicense,
     required super.onChanged,
   });

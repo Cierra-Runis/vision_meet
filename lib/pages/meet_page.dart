@@ -34,7 +34,6 @@ class MeetPage extends StatelessWidget {
                         titleText: '你好',
                         onTap: () {
                           context.pop();
-
                           context.pop();
                         },
                       ),
@@ -44,10 +43,10 @@ class MeetPage extends StatelessWidget {
               );
             }
           },
-          child: Text(
+          child: const Text(
             '结束',
             style: TextStyle(
-              color: Theme.of(context).colorScheme.errorContainer,
+              color: Colors.red,
               fontWeight: FontWeight.bold,
             ),
           ),

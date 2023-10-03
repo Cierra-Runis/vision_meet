@@ -10,8 +10,14 @@ class AudioSettingSection extends StatelessWidget {
     return BasedListSection(
       titleText: '音频',
       children: [
-        const MicEnableTile(),
-        const SpeakerEnableTile(),
+        MicEnableTile(
+          value: true,
+          onChanged: (value) {},
+        ),
+        SpeakerEnableTile(
+          value: true,
+          onChanged: (value) {},
+        ),
         BasedSwitchListTile(
           value: true,
           onChanged: (value) {},

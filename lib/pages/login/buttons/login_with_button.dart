@@ -31,7 +31,7 @@ class LoginWithButton extends StatelessWidget {
                 content: RichText(
                   text: TextSpan(
                     style: TextStyle(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: context.colorScheme.onBackground,
                     ),
                     text: '为保障你的合法权益，请阅读并同意',
                     children: [
